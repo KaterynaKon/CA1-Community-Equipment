@@ -51,7 +51,6 @@ emails, a shared spreadsheet and sometimes handwritten notes.
 12. When equipment is overdue and has not been returned by the agreed return date,
 staff contact the borrower by telephone or email.
 
-### 1.3 Problems
 
 ### 1.3 Problems
 
