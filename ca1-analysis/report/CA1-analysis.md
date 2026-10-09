@@ -69,3 +69,21 @@ staff contact the borrower by telephone or email.
 - P-13: Damage handling and the decision to return equipment to use are not consistently recorded.
 - P-14: Repeated or serious late returns have no formally defined consequences.
 
+### 1.4 Problem Consequences
+
+| Problem | Consequence |
+|---|---|
+| P-01 | C-01: Request records may be delayed or incomplete, which may cause staff to work with missing information. |
+| P-02 | C-02: Staff may use inconsistent information when identifying equipment, quantities, dates or statuses. |
+| P-03 | C-03: Staff may approve or promise equipment that is not physically available. |
+| P-04 | C-04: Staff may need to contact borrowers again, delaying the request decision. |
+| P-05 | C-05: Less experienced staff may omit required checks, instructions or coordinator approval. |
+| P-06 | C-06: Similar borrower requests may receive inconsistent eligibility decisions. |
+| P-07 | C-07: Comparable requests may receive inconsistent deposit decisions. |
+| P-08 | C-08: Two borrowers may believe that the same equipment is reserved for them. |
+| P-09 | C-09: Staff may be unable to apply or explain priority decisions consistently. |
+| P-10 | C-10: Equipment may be released without a consistent record of the collector and collection checks. |
+| P-11 | C-11: A complete equipment system may be unusable because a required component is missing. |
+| P-12 | C-12: Staff may not know whether returned equipment is available, damaged or missing components. |
+| P-13 | C-13: Damaged or unsafe equipment may be returned to use without a clear recorded decision. |
+| P-14 | C-14: Staff have no formally defined basis for considering repeated late returns in future decisions. |
