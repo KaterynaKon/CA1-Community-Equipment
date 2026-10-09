@@ -69,7 +69,27 @@ staff contact the borrower by telephone or email.
 - P-13: Damage handling and the decision to return equipment to use are not consistently recorded.
 - P-14: Repeated or serious late returns have no formally defined consequences.
 
-### 1.4 Problem Consequences
+### 1.4 Evidence Supporting Problems
+
+| Evidence ID | Evidence from Scenario | Supports Problem |
+|---|---|---|
+| E-01 | “A telephone request may first be written in a notebook, and then transferred later.” | P-01 |
+| E-02 | “The same equipment may be described differently, and quantities, dates and statuses are not always recorded consistently.” | P-02 |
+| E-03 | “Staff sometimes check the storage room, because recent returns, damage or missing components may not yet appear in the spreadsheet.” | P-03, P-11, P-12 |
+| E-04 | “There is no standard request form, so staff often contact borrowers about missing information.” | P-04 |
+| E-05 | “Experienced staff understand these practices, but they are not consistently documented.” | P-05 |
+| E-06 | “Individual residents have sometimes borrowed equipment for neighbourhood activities, while requests for private events and from businesses have been handled inconsistently.” | P-06 |
+| E-07 | “There is no standard method for deciding the amount or recording why a deposit was required.” | P-07 |
+| E-08 | “Staff disagree about when equipment becomes reserved.” | P-08 |
+| E-09 | “Activities run by the partnership or supported by the local authority sometimes have priority, but the basis for this is not formally documented.” | P-09 |
+| E-10 | “Borrowers also sometimes arrive without confirmation, outside the agreed time or with a different collector, and staff handle these cases individually.” | P-10 |
+| E-11 | “The spreadsheet usually records the system as one item. A missing component may therefore go unnoticed until the system is needed again.” | P-11 |
+| E-12 | “Returned equipment may be left unchecked in a storage area, and the spreadsheet is updated later. Other staff may then be uncertain whether the equipment is available.” | P-12 |
+| E-13 | “There is no standard way to record what was damaged, when the issue was found, whether the item remains usable, whether repair is required, or who authorised its return to service.” | P-13 |
+| E-14 | “Repeated or serious lateness is not formally defined. Staff are also unsure whether repeated late returns or late cancellations should affect future decisions.” | P-14 |
+
+
+### 1.5 Problem Consequences
 
 | Problem | Consequence |
 |---|---|
@@ -88,7 +108,7 @@ staff contact the borrower by telephone or email.
 | P-13 | C-13: Damaged or unsafe equipment may be returned to use without a clear recorded decision. |
 | P-14 | C-14: Staff have no formally defined basis for considering repeated late returns in future decisions. |
 
-### 1.5 Problem, Consequence and Desired Outcome
+### 1.6 Problem, Consequence and Desired Outcome
 
 | Problem | Consequence | Desired Outcome |
 |---|---|---|
@@ -106,3 +126,23 @@ staff contact the borrower by telephone or email.
 | P-12 | C-12 | O-12: After return, staff should have clear information about the equipment’s condition and availability. |
 | P-13 | C-13 | O-13: Damage, repair and the decision that equipment is suitable for use should be clearly recorded. |
 | P-14 | C-14 | O-14: Staff should have a consistent approach for managing repeated or serious late returns. |
+
+### 1.7 Uncertainty
+
+- U-01: At what point, and under which conditions, should equipment become reserved?
+
+- U-02: Which residents, private events and businesses are eligible to borrow equipment?
+
+- U-03: When should a deposit be required, how should its amount be decided,
+  and who may approve exceptions?
+
+- U-04: When should returned equipment become available for another borrower?
+
+- U-05: How should repeated late returns or late cancellations affect future
+  lending decisions?
+
+- U-06: Which messages, if any, should be sent automatically rather than
+  reviewed by staff?
+
+- U-07: How much historical information should be retained or transferred
+  into the new service?
