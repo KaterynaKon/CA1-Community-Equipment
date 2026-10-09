@@ -146,3 +146,41 @@ staff contact the borrower by telephone or email.
 
 - U-07: How much historical information should be retained or transferred
   into the new service?
+
+## 2. Purpose, Scope and Boundary
+
+### 2.1 Purpose
+The purpose of the Riverside Equipment Lending Service is to make the current
+equipment-lending process more reliable, consistent, transparent and traceable,
+so that staff can manage requests, availability, collection, returns and
+equipment condition using clear and current information.
+
+### 2.2 In-Scope Functions
+
+- Recording equipment loan requests.
+
+- Supporting staff to check request information, relevant conditions and
+  equipment availability before a person makes a request decision.
+
+- Recording request decisions, including approved, rejected, withdrawn or
+  pending further information.
+
+- Recording changes to a request, including changes to requested quantities,
+  collection dates, return dates or the named collector.
+
+- Supporting extension requests by checking whether an extension would conflict
+  with later approved requests.
+
+- Recording equipment collection for an approved request.
+
+- Recording equipment returns.
+
+- Recording equipment condition, missing components, damage and maintenance needs.
+
+- Showing the current equipment status and availability to authorised staff.
+
+
+### 2.3 Out-of-Scope Functions
+
+- A shared equipment-lending service operated by multiple organisations.
+  The initial scope covers only equipment managed by Riverside Community Partnership.
