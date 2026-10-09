@@ -87,3 +87,22 @@ staff contact the borrower by telephone or email.
 | P-12 | C-12: Staff may not know whether returned equipment is available, damaged or missing components. |
 | P-13 | C-13: Damaged or unsafe equipment may be returned to use without a clear recorded decision. |
 | P-14 | C-14: Staff have no formally defined basis for considering repeated late returns in future decisions. |
+
+### 1.5 Problem, Consequence and Desired Outcome
+
+| Problem | Consequence | Desired Outcome |
+|---|---|---|
+| P-01 | C-01 | O-01: All requests should be captured completely, consistently and promptly, regardless of the submission channel. |
+| P-02 | C-02 | O-02: Staff should use consistent information for equipment names, quantities, dates and statuses. |
+| P-03 | C-03 | O-03: Borrowers should receive confirmation only for equipment that is physically available for loan. |
+| P-04 | C-04 | O-04: Staff should have the required request information before making a decision. |
+| P-05 | C-05 | O-05: Required checks, handling instructions and coordinator approvals should be completed consistently. |
+| P-06 | C-06 | O-06: Similar borrower requests should receive consistent eligibility decisions according to agreed rules. |
+| P-07 | C-07 | O-07: Deposit decisions should be consistent, transparent and recorded according to an agreed policy. |
+| P-08 | C-08 | O-08: Staff and borrowers should have a shared understanding of when equipment is reserved. |
+| P-09 | C-09 | O-09: Conflicting requests should be resolved and explained consistently according to an agreed priority policy. |
+| P-10 | C-10 | O-10: Equipment collection should be traceable, including the collector and completed collection checks. |
+| P-11 | C-11 | O-11: All required components of an equipment system should be accounted for before it is issued or made available. |
+| P-12 | C-12 | O-12: After return, staff should have clear information about the equipment’s condition and availability. |
+| P-13 | C-13 | O-13: Damage, repair and the decision that equipment is suitable for use should be clearly recorded. |
+| P-14 | C-14 | O-14: Staff should have a consistent approach for managing repeated or serious late returns. |
