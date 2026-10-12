@@ -87,6 +87,11 @@ staff contact the borrower by telephone or email.
 | E-12 | “Returned equipment may be left unchecked in a storage area, and the spreadsheet is updated later. Other staff may then be uncertain whether the equipment is available.” | P-12 |
 | E-13 | “There is no standard way to record what was damaged, when the issue was found, whether the item remains usable, whether repair is required, or who authorised its return to service.” | P-13 |
 | E-14 | “Repeated or serious lateness is not formally defined. Staff are also unsure whether repeated late returns or late cancellations should affect future decisions.” | P-14 |
+| E-15 | “A requested extension must be checked against later approved requests.” | FR-06 |
+| E-16 | “The coordinator needs reliable information about current availability, requests awaiting decisions, planned collections and returns, overdue loans, damage, maintenance, safety inspections and use of grant-funded equipment.” | SH-05 |
+| E-17 | “Reports for funders should show useful activity information without unnecessarily disclosing borrower details.” | SH-09 |
+
+
 
 
 ### 1.5 Problem Consequences
@@ -252,4 +257,44 @@ equipment condition using clear and current information.
 
 ### 3.2 Actor Classification
 
+| Actor | Classification | Why |
+|---|---|---|
+| Office Staff | Primary actor | Uses the service to manage requests, decisions, collections and returns. |
+| Volunteer | Primary actor | Uses the service to record collection and return activity within limited access permissions. |
+| Partnership Coordinator | Primary actor | Uses information in the service to support decisions and approvals. |
+| Equipment Coordinator | Primary actor | Uses equipment, component and condition information to manage equipment readiness. |
+
+
 ### 3.3 Actor-Goal Table
+
+| Actor | Goal | Candidate Use Case |
+|---|---|---|
+| Office Staff | Record a new equipment loan request. | UC-01: Record Loan Request |
+| Office Staff | Assess a loan request, check relevant information and availability, and record a decision. | UC-02: Assess Loan Request |
+| Office Staff | Update a loan request, including requested quantity, collection date, return date, collector or extension request. | UC-03: Update Loan Request |
+| Office Staff | Record the collection of approved equipment. | UC-04: Record Equipment Collection |
+| Office Staff | Record equipment return and its inspection outcome, including missing components, condition, damage and maintenance needs. | UC-05: Record Equipment Return and Inspection |
+| Volunteer | Record equipment collection without viewing deposit information or unnecessary personal data. | UC-04: Record Equipment Collection |
+| Volunteer | Record equipment return and inspection information without viewing deposit information or unnecessary personal data. | UC-05: Record Equipment Return and Inspection |
+| Partnership Coordinator | Review and approve a request that requires coordinator approval. | UC-06: Review Request Requiring Coordinator Approval |
+| Partnership Coordinator | Review operational information about availability, pending requests, overdue loans, damage, maintenance and safety inspections. | UC-07: Review Operational Equipment Information |
+| Equipment Coordinator | Review equipment systems, components, condition, missing parts and inspection information. | UC-08: Review Equipment Readiness |
+
+
+## 4. Requirements Catalogue
+
+| ID | Type | Requirement | Source / Rationale | MoSCoW | Verification |
+|---|---|---|---|---|---|
+| FR-01 | Functional | The service shall record an equipment loan request with the information required for staff to assess it. | SH-01, E-04, P-04, O-04 | Must | Walkthrough |
+| FR-02 | Functional | The service shall allow authorised staff to view and assess a loan request using its recorded information, relevant conditions and equipment availability. | SH-01; P-03; P-05; O-03; O-05 | Must | Walkthrough |
+| FR-03 | Functional | The service shall record a request decision as approved, rejected, withdrawn or pending further information. | E-05; SH-01 | Must | Walkthrough |
+| FR-04 | Functional | The service shall record the collection of approved equipment, including the collector and the equipment issued. | SH-01; SH-04; P-10; O-10 | Must | Walkthrough |
+| FR-05 | Functional | The service shall record the return of issued equipment, including the return date and the person who recorded the return. | SH-01; P-12; O-12 | Must | Walkthrough |
+| FR-06 | Functional | The service shall record an extension request and support staff in checking whether the requested extension conflicts with later approved requests. | E-15; UC-03 | Should | Walkthrough |
+| FR-07 | Functional | The service shall record damage identified during equipment return or inspection, including the damaged item, the issue found, whether it remains suitable for use, and any repair need. | E-13; P-13; O-13; UC-05 | Must | Walkthrough |
+| FR-08 | Functional | The service shall provide the Partnership Coordinator with operational information about current equipment availability, requests awaiting decisions, planned collections and returns, overdue loans, damage, maintenance and safety inspections. | SH-05; E-16; UC-07 | Must | Walkthrough |
+| FR-09 | Functional | The service shall produce activity reports for funders without unnecessarily disclosing borrower personal information. | SH-09; E-17 | Should | Report review |
+| NFR-01 | Non-functional | The service shall prevent volunteers from viewing deposit information and personal data not required to record equipment collection or return. | SH-02; scenario evidence about volunteer access | Must | Permission test |
+| NFR-02 | Non-functional | The service shall not allow a loan request to be assessed until the information required by the agreed request policy is recorded. | E-04; P-04; O-04 | Must | Validation test |
+| NFR-03 | Non-functional | ... | ... | ... | ... |
+| NFR-04 | Non-functional | ... | ... | ... | ... |
