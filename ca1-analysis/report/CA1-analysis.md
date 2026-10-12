@@ -230,3 +230,26 @@ equipment condition using clear and current information.
 
 - C-05: The initial scope is limited to equipment managed by Riverside
   Community Partnership.
+
+
+## 3. Stakeholder and Actor Catalogue
+
+### 3.1 Stakeholder Catalogue
+
+| ID | Stakeholder | Type | Goal / Need | Concern / Influence | Actor? |
+|---|---|---|---|---|---|
+| SH-01 | Office Staff | Direct | Need reliable and current information about requests, availability, collections, returns and equipment condition. | Inconsistent or incomplete records can lead to incorrect decisions. | Yes |
+| SH-02 | Volunteer | Direct | Need to record equipment collection and return activity. | Must not see deposit information or unnecessary personal data. | Yes |
+| SH-03 | Borrower / Requester | Direct | Needs clear confirmation of approved equipment, quantities, collection arrangements, return date, deposit and relevant conditions. | Eligibility for some borrower types is not confirmed. | To be confirmed (U-08) Should borrowers submit loan requests directly through a digital form, or should staff continue to record telephone and email requests in the service? |
+| SH-04 | Collector | Direct | Needs to collect approved equipment and receive clear confirmation of issued items. | May be different from the requester. | No |
+| SH-05 | Partnership Coordinator | Direct | Needs reliable operational information and support for consistent decisions. | Unusual community requests still require human judgement. | Yes |
+| SH-06 | Equipment Coordinator | Direct | Needs clear records of equipment systems, components, condition, missing parts and inspections. | A missing component can make a complete system unusable. | Yes |
+| SH-07 | Riverside Community Partnership | Indirect / Service Owner | Needs an effective and consistent equipment-lending service. | Has limited staff, funding and specialist technical support. | No |
+| SH-08 | External Repair Service | External | Needs clear information about the equipment, reported damage and required repair work. | Repairs may affect when equipment can return to service. | No |
+| SH-09 | Funders | Indirect / External | Need useful activity information about equipment use. | Reports must not unnecessarily disclose borrower personal information. | No |
+| SH-10 | Local Authority | Offstage / External | Influences the priority of activities it supports. | The basis for applying priority is not formally documented. | No |
+
+
+### 3.2 Actor Classification
+
+### 3.3 Actor-Goal Table
