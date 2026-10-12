@@ -184,3 +184,49 @@ equipment condition using clear and current information.
 
 - A shared equipment-lending service operated by multiple organisations.
   The initial scope covers only equipment managed by Riverside Community Partnership.
+
+### 2.4 Dependencies
+
+- D-01: The service depends on staff or authorised volunteers recording
+  equipment collection, return and inspection results.
+
+- D-02: The service depends on staff obtaining missing request information
+  from borrowers and updating the request record.
+
+- D-03: The service depends on staff physically checking equipment condition,
+  quantity and components before recording the inspection outcome.
+
+- D-04: The service depends on authorised staff or coordinators making
+  request decisions, including decisions about unusual cases.
+
+- D-05: The service depends on staff contacting borrowers about overdue
+  equipment and recording any relevant outcome.
+
+
+### 2.5 Assumptions
+
+- A-01: It is assumed that Riverside will define authorised user roles before
+  implementation. The scenario confirms that volunteers need limited access,
+  but the complete role and permission model requires stakeholder confirmation.
+
+- A-02: It is assumed that existing spreadsheet records will be reviewed for
+  incomplete entries, inconsistent equipment names and possible duplicates
+  before they are relied on by the new service. The amount of historical data
+  to retain or migrate remains an open question (U-07).
+
+
+### 2.6 Constraints
+
+- C-01: Internet access is occasionally unreliable.
+
+- C-02: Riverside has few staff, relies on volunteers, and has limited funding
+  and specialist technical support.
+
+- C-03: Volunteers may need to record collections and returns without seeing
+  deposit information or unnecessary personal data.
+
+- C-04: Existing records contain incomplete entries, inconsistent equipment
+  names and possible duplicates.
+
+- C-05: The initial scope is limited to equipment managed by Riverside
+  Community Partnership.
