@@ -293,8 +293,30 @@ equipment condition using clear and current information.
 | FR-06 | Functional | The service shall record an extension request and support staff in checking whether the requested extension conflicts with later approved requests. | E-15; UC-03 | Should | Walkthrough |
 | FR-07 | Functional | The service shall record damage identified during equipment return or inspection, including the damaged item, the issue found, whether it remains suitable for use, and any repair need. | E-13; P-13; O-13; UC-05 | Must | Walkthrough |
 | FR-08 | Functional | The service shall provide the Partnership Coordinator with operational information about current equipment availability, requests awaiting decisions, planned collections and returns, overdue loans, damage, maintenance and safety inspections. | SH-05; E-16; UC-07 | Must | Walkthrough |
-| FR-09 | Functional | The service shall produce activity reports for funders without unnecessarily disclosing borrower personal information. | SH-09; E-17 | Should | Report review |
-| NFR-01 | Non-functional | The service shall prevent volunteers from viewing deposit information and personal data not required to record equipment collection or return. | SH-02; scenario evidence about volunteer access | Must | Permission test |
+| FR-09 | Functional | The service shall produce activity reports for funders. | SH-09; E-17 | Should | Report review |
+| NFR-01 | Non-functional | The service shall prevent volunteers from viewing deposit information and personal data not required to record equipment collection or return. | SH-02; E-17 | Must | Permission test |
 | NFR-02 | Non-functional | The service shall not allow a loan request to be assessed until the information required by the agreed request policy is recorded. | E-04; P-04; O-04 | Must | Validation test |
-| NFR-03 | Non-functional | ... | ... | ... | ... |
-| NFR-04 | Non-functional | ... | ... | ... | ... |
+| NFR-03 | Non-functional | Funder reports shall not disclose borrower personal information that is not required for activity reporting. | SH-09; E-17 | Must | Report review |
+| NFR-04 | Non-functional | The service shall use defined equipment names and status values when authorised users record or update equipment information. | E-02; P-02; O-02 | Must | Data validation test |
+
+
+## 5. Business Rules and Risk Register
+
+### 5.1 Confirmed Business Rules
+
+| ID | Business Rule | Scenario Evidence | Related Requirements / Use Cases |
+|---|---|---|---|
+| BR-01 | Electrical equipment must have a current safety inspection before it is made available for loan. | “Electrical equipment must have a current safety inspection.” | FR-02; UC-02 |
+| BR-02 | First-aid kits must be checked before and after use. | “First-aid kits must be checked before and after use.” | FR-05; UC-05 |
+| BR-03 | High-value equipment requires coordinator approval before a request can be approved. | “Some high-value equipment requires coordinator approval.” | FR-03; UC-06 |
+| BR-04 | Returned equipment must be checked for quantity, missing components, visible damage, cleanliness, safety and maintenance needs. | “Returned equipment should be checked for quantity, missing components, visible damage, cleanliness, safety and maintenance needs.” | FR-05; FR-07; UC-05 |
+| BR-05 | A requested extension must be checked against later approved requests before it is accepted. | “A requested extension must be checked against later approved requests.” | FR-06; UC-03 |
+
+
+### 5.2 Risk Register
+
+| ID | Risk | Possible Impact | Mitigation / Follow-up |
+|---|---|---|---|
+| R-01 | If coordinator approval for high-value equipment is not recorded or checked, staff may approve or release equipment without the required approval. | Inconsistent handling of high-value equipment and reduced accountability for approval decisions. | Ensure that the agreed approval requirement can be recorded and checked before the relevant request is approved. |
+| R-02 | If required safety checks or handling instructions are not recorded before collection, equipment may be issued without confirmation that relevant safety requirements have been met. | Unsafe or unsuitable equipment may be issued to a borrower. | Record required safety-check and instruction outcomes before collection; confirm the detailed policy with the coordinator. |
+| R-03 | If existing spreadsheet records are migrated without review, inconsistent names, incomplete entries and possible duplicates may be transferred into the new service. | Availability information and equipment records may remain inaccurate after migration. | Review, standardise and deduplicate existing records before or during migration; confirm the required historical-data scope. |
