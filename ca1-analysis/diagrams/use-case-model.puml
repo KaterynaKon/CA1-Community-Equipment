@@ -1,0 +1,33 @@
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+
+actor "Office Staff" as OfficeStaff
+actor "Volunteer" as Volunteer
+actor "Partnership Coordinator" as PartnershipCoordinator
+
+
+rectangle "Riverside Community Partnership Equipment Lending Service" {
+  usecase "UC-01 Record Loan Request" as UC1
+  usecase "UC-02 Assess Loan Request" as UC2
+  usecase "UC-03 Update Loan Request" as UC3
+  usecase "UC-04 Record Equipment Collection" as UC4
+  usecase "UC-05 Record Equipment Return and Inspection" as UC5
+  usecase "UC-06 Review Request Requiring Coordinator Approval" as UC6
+  usecase "UC-07 Review Operational Equipment Information" as UC7
+
+}
+
+OfficeStaff --> UC1
+OfficeStaff --> UC2
+OfficeStaff --> UC3
+OfficeStaff --> UC4
+OfficeStaff --> UC5
+
+Volunteer --> UC4
+Volunteer --> UC5
+
+PartnershipCoordinator --> UC6
+PartnershipCoordinator --> UC7
+
+@enduml

@@ -87,9 +87,6 @@ staff contact the borrower by telephone or email.
 | E-12 | “Returned equipment may be left unchecked in a storage area, and the spreadsheet is updated later. Other staff may then be uncertain whether the equipment is available.” | P-12 |
 | E-13 | “There is no standard way to record what was damaged, when the issue was found, whether the item remains usable, whether repair is required, or who authorised its return to service.” | P-13 |
 | E-14 | “Repeated or serious lateness is not formally defined. Staff are also unsure whether repeated late returns or late cancellations should affect future decisions.” | P-14 |
-| E-15 | “A requested extension must be checked against later approved requests.” | FR-06 |
-| E-16 | “The coordinator needs reliable information about current availability, requests awaiting decisions, planned collections and returns, overdue loans, damage, maintenance, safety inspections and use of grant-funded equipment.” | SH-05 |
-| E-17 | “Reports for funders should show useful activity information without unnecessarily disclosing borrower details.” | SH-09 |
 
 
 
@@ -151,6 +148,9 @@ staff contact the borrower by telephone or email.
 
 - U-07: How much historical information should be retained or transferred
   into the new service?
+
+- U-08: Should the Equipment Coordinator have authorised direct access to review
+  equipment components, condition, missing parts and inspection information?
 
 ## 2. Purpose, Scope and Boundary
 
@@ -222,18 +222,18 @@ equipment condition using clear and current information.
 
 ### 2.6 Constraints
 
-- C-01: Internet access is occasionally unreliable.
+- CON-01: Internet access is occasionally unreliable.
 
-- C-02: Riverside has few staff, relies on volunteers, and has limited funding
+- CON-02: Riverside has few staff, relies on volunteers, and has limited funding
   and specialist technical support.
 
-- C-03: Volunteers may need to record collections and returns without seeing
+- CON-03: Volunteers may need to record collections and returns without seeing
   deposit information or unnecessary personal data.
 
-- C-04: Existing records contain incomplete entries, inconsistent equipment
+- CON-04: Existing records contain incomplete entries, inconsistent equipment
   names and possible duplicates.
 
-- C-05: The initial scope is limited to equipment managed by Riverside
+- CON-05: The initial scope is limited to equipment managed by Riverside
   Community Partnership.
 
 
@@ -245,10 +245,10 @@ equipment condition using clear and current information.
 |---|---|---|---|---|---|
 | SH-01 | Office Staff | Direct | Need reliable and current information about requests, availability, collections, returns and equipment condition. | Inconsistent or incomplete records can lead to incorrect decisions. | Yes |
 | SH-02 | Volunteer | Direct | Need to record equipment collection and return activity. | Must not see deposit information or unnecessary personal data. | Yes |
-| SH-03 | Borrower / Requester | Direct | Needs clear confirmation of approved equipment, quantities, collection arrangements, return date, deposit and relevant conditions. | Eligibility for some borrower types is not confirmed. | To be confirmed (U-08) Should borrowers submit loan requests directly through a digital form, or should staff continue to record telephone and email requests in the service? |
+| SH-03 | Borrower / Requester | Direct | Needs clear confirmation of approved equipment, quantities, collection arrangements, return date, deposit and relevant conditions. | Eligibility for some borrower types is not confirmed. | No - requests are submitted by telephone or email and recorded by staff in the current process.|
 | SH-04 | Collector | Direct | Needs to collect approved equipment and receive clear confirmation of issued items. | May be different from the requester. | No |
 | SH-05 | Partnership Coordinator | Direct | Needs reliable operational information and support for consistent decisions. | Unusual community requests still require human judgement. | Yes |
-| SH-06 | Equipment Coordinator | Direct | Needs clear records of equipment systems, components, condition, missing parts and inspections. | A missing component can make a complete system unusable. | Yes |
+| SH-06 | Equipment Coordinator | Direct | Needs clear records of equipment systems, components, condition, missing parts and inspections. | A missing component can make a complete system unusable. | To be confirmed (U-08) |
 | SH-07 | Riverside Community Partnership | Indirect / Service Owner | Needs an effective and consistent equipment-lending service. | Has limited staff, funding and specialist technical support. | No |
 | SH-08 | External Repair Service | External | Needs clear information about the equipment, reported damage and required repair work. | Repairs may affect when equipment can return to service. | No |
 | SH-09 | Funders | Indirect / External | Need useful activity information about equipment use. | Reports must not unnecessarily disclose borrower personal information. | No |
@@ -262,7 +262,9 @@ equipment condition using clear and current information.
 | Office Staff | Primary actor | Uses the service to manage requests, decisions, collections and returns. |
 | Volunteer | Primary actor | Uses the service to record collection and return activity within limited access permissions. |
 | Partnership Coordinator | Primary actor | Uses information in the service to support decisions and approvals. |
-| Equipment Coordinator | Primary actor | Uses equipment, component and condition information to manage equipment readiness. |
+
+No supporting actors are confirmed by the scenario.
+
 
 
 ### 3.3 Actor-Goal Table
@@ -278,7 +280,7 @@ equipment condition using clear and current information.
 | Volunteer | Record equipment return and inspection information without viewing deposit information or unnecessary personal data. | UC-05: Record Equipment Return and Inspection |
 | Partnership Coordinator | Review and approve a request that requires coordinator approval. | UC-06: Review Request Requiring Coordinator Approval |
 | Partnership Coordinator | Review operational information about availability, pending requests, overdue loans, damage, maintenance and safety inspections. | UC-07: Review Operational Equipment Information |
-| Equipment Coordinator | Review equipment systems, components, condition, missing parts and inspection information. | UC-08: Review Equipment Readiness |
+
 
 
 ## 4. Requirements Catalogue
@@ -286,17 +288,20 @@ equipment condition using clear and current information.
 | ID | Type | Requirement | Source / Rationale | MoSCoW | Verification |
 |---|---|---|---|---|---|
 | FR-01 | Functional | The service shall record an equipment loan request with the information required for staff to assess it. | SH-01, E-04, P-04, O-04 | Must | Walkthrough |
-| FR-02 | Functional | The service shall allow authorised staff to view and assess a loan request using its recorded information, relevant conditions and equipment availability. | SH-01; P-03; P-05; O-03; O-05 | Must | Walkthrough |
-| FR-03 | Functional | The service shall record a request decision as approved, rejected, withdrawn or pending further information. | E-05; SH-01 | Must | Walkthrough |
+| FR-02 | Functional | The service shall support authorised staff in checking whether the requested equipment quantity is available for the requested loan period before recording a request decision. | SH-01; P-03; O-03 | Must | Walkthrough |
+| FR-03 | Functional | The service shall record a request decision as approved, rejected, withdrawn or pending further information. | Present Process 1.2, step 5; SH-01 | Must | Walkthrough |
 | FR-04 | Functional | The service shall record the collection of approved equipment, including the collector and the equipment issued. | SH-01; SH-04; P-10; O-10 | Must | Walkthrough |
 | FR-05 | Functional | The service shall record the return of issued equipment, including the return date and the person who recorded the return. | SH-01; P-12; O-12 | Must | Walkthrough |
-| FR-06 | Functional | The service shall record an extension request and support staff in checking whether the requested extension conflicts with later approved requests. | E-15; UC-03 | Should | Walkthrough |
+| FR-06 | Functional | The service shall record an extension request and support staff in checking whether the requested extension conflicts with later approved requests. | BR-05; UC-03 | Should | Walkthrough |
 | FR-07 | Functional | The service shall record damage identified during equipment return or inspection, including the damaged item, the issue found, whether it remains suitable for use, and any repair need. | E-13; P-13; O-13; UC-05 | Must | Walkthrough |
-| FR-08 | Functional | The service shall provide the Partnership Coordinator with operational information about current equipment availability, requests awaiting decisions, planned collections and returns, overdue loans, damage, maintenance and safety inspections. | SH-05; E-16; UC-07 | Must | Walkthrough |
-| FR-09 | Functional | The service shall produce activity reports for funders. | SH-09; E-17 | Should | Report review |
+| FR-08 | Functional | The service shall provide the Partnership Coordinator with operational information about current equipment availability, requests awaiting decisions, planned collections and returns, overdue loans, damage, maintenance and safety inspections and use of grant-funded equipment. | SH-05; UC-07 | Must | Walkthrough |
+| FR-09 | Functional | The service shall provide activity information suitable for funder reporting. | SH-09 | Should | Report review |
+| FR-10 | Functional | The service shall record the outcome of a returned-equipment inspection, including quantity, missing components, visible damage, cleanliness, safety and maintenance needs. | BR-04; P-11; P-12; UC-05 | Must | Walkthrough |
+| FR-11 | Functional | The service shall record changes to requested equipment quantities, collection dates, return dates and the named collector. | Scenario: Changes, Cancellations and Delays; UC-03 | Should | Walkthrough |
+| FR-12 | Functional | The service shall record coordinator approval for a request involving high-value equipment before the request is recorded as approved. | BR-03; UC-06 | Must | Walkthrough |
 | NFR-01 | Non-functional | The service shall prevent volunteers from viewing deposit information and personal data not required to record equipment collection or return. | SH-02; E-17 | Must | Permission test |
 | NFR-02 | Non-functional | The service shall not allow a loan request to be assessed until the information required by the agreed request policy is recorded. | E-04; P-04; O-04 | Must | Validation test |
-| NFR-03 | Non-functional | Funder reports shall not disclose borrower personal information that is not required for activity reporting. | SH-09; E-17 | Must | Report review |
+| NFR-03 | Non-functional | Funder reports shall not disclose borrower personal information that is not required for activity reporting. | SH-09 | Must | Report review |
 | NFR-04 | Non-functional | The service shall use defined equipment names and status values when authorised users record or update equipment information. | E-02; P-02; O-02 | Must | Data validation test |
 
 
@@ -320,3 +325,13 @@ equipment condition using clear and current information.
 | R-01 | If coordinator approval for high-value equipment is not recorded or checked, staff may approve or release equipment without the required approval. | Inconsistent handling of high-value equipment and reduced accountability for approval decisions. | Ensure that the agreed approval requirement can be recorded and checked before the relevant request is approved. |
 | R-02 | If required safety checks or handling instructions are not recorded before collection, equipment may be issued without confirmation that relevant safety requirements have been met. | Unsafe or unsuitable equipment may be issued to a borrower. | Record required safety-check and instruction outcomes before collection; confirm the detailed policy with the coordinator. |
 | R-03 | If existing spreadsheet records are migrated without review, inconsistent names, incomplete entries and possible duplicates may be transferred into the new service. | Availability information and equipment records may remain inaccurate after migration. | Review, standardise and deduplicate existing records before or during migration; confirm the required historical-data scope. |
+
+
+
+## 6. Use-Case Model and Detailed Use Case
+
+### 6.1 Use-Case Model
+
+The use-case diagram is provided in `diagrams/use-case-model.puml`.
+
+### 6.2 Detailed Use Case: UC-05 Record Equipment Return and Inspection
