@@ -348,3 +348,50 @@ The use-case diagram is provided in `diagrams/use-case-model.puml`.
 | Exceptions | E1. The service cannot save the request, for example because internet access is unavailable. No loan request is recorded, and staff follow an agreed fallback procedure. |
 | Postconditions | - A loan request is recorded and available for assessment.<br>- No approval or equipment reservation is assumed at this stage. |
 | Related Requirements / Rules | FR-01; NFR-02 |
+
+
+
+## 7. Principal Traceability Chains
+
+| Problem or Stakeholder Goal | Requirement | Use Case / Gherkin | Domain Concepts |
+|---|---|---|---|
+| P-04: Request information may be missing because there is no standard request form. | FR-01; NFR-02 | UC-01: Record Loan Request; SC-01; SC-02 | Borrower, LoanRequest, RequestedEquipmentLine |
+| P-03: Spreadsheet availability may not match the physical storage room. | FR-02 | UC-02: Assess Loan Request | LoanRequest, RequestedEquipmentLine, EquipmentType, EquipmentUnit |
+| P-10: Collection exceptions and collection-recording steps are handled inconsistently. | FR-04 | UC-04: Record Equipment Collection | LoanRequest, CollectionRecord, EquipmentUnit, StaffMember |
+| P-12: Uninspected returns create uncertainty about equipment availability. | FR-05; FR-10 | UC-05: Record Equipment Return and Inspection | ReturnInspectionRecord, EquipmentUnit, EquipmentComponent |
+| P-13: Damage handling and the decision to return equipment to use are not consistently recorded. | FR-07 | UC-05: Record Equipment Return and Inspection | DamageRecord, ReturnInspectionRecord, EquipmentUnit |
+| SH-02: Volunteers need to record activity without seeing deposits or unnecessary personal data. | NFR-01 | UC-04; UC-05; SC-03 | StaffMember, CollectionRecord, ReturnInspectionRecord |
+
+
+## 8. Reflection and AI Declaration
+
+### 8.1 Reflection
+
+One important modelling decision was to distinguish EquipmentType from EquipmentUnit. EquipmentType represents a category such as a chair, projector
+or first-aid kit. EquipmentUnit represents a physical item or equipment system with its own condition, availability status and possible components.
+
+A second decision was to use RequestedEquipmentLine as a separate concept. One LoanRequest may include several equipment types, and each requested type
+has its own quantity. RequestedEquipmentLine therefore connects a LoanRequest to an EquipmentType and records the requested quantity.
+
+The Equipment Coordinator was retained as a stakeholder but was not included as a confirmed system actor. The scenario shows that this role needs component
+and condition information, but it does not confirm whether the coordinator has direct authorised access to the future service. This remains an unresolved question (U-08).
+
+
+### 8.2 Limitations and Unresolved Questions
+
+The scenario does not define the detailed rules for reservation, borrower eligibility, deposits, priority between conflicting requests, repeated late
+returns or automated notifications. These matters are recorded in the Uncertainty Register and require stakeholder confirmation before implementation.
+
+
+### 8.3 AI Declaration
+
+I used AI to help me understand analysis terminology and to ask for recommendations about the clarity, consistency and English wording of my draft
+work. I checked the recommendations against the case scenario before deciding whether to use them. I made the final decisions about the analysis,
+requirements, priorities, uncertainties and domain model, and I can explain the submitted artefacts.
+
+### 8.4 Representative AI Interaction
+
+I asked whether the Equipment Coordinator should be shown as a system actor. AI suggested that this role could be a primary actor because it needs
+information about equipment components and condition. After checking the scenario, I decided not to include the Equipment Coordinator as a confirmed
+actor because direct access to the future service is not stated. I recorded this as clarification question U-08.
+

@@ -145,4 +145,3 @@ The following conceptual classes are selected for the initial Riverside domain m
 9. ReturnInspectionRecord
 10. DamageRecord
 
-

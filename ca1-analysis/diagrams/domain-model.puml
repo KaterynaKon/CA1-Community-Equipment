@@ -1,4 +1,6 @@
 @startuml
+top to bottom direction
+
 skinparam classAttributeIconSize 0
 hide methods
 
@@ -65,4 +67,18 @@ class DamageRecord {
   repairRequired
 }
 
+Borrower "1" -- "0..*" LoanRequest : makes
+StaffMember "0..*" -- "1..*" LoanRequest : manages
+LoanRequest "1" -- "1..*" RequestedEquipmentLine : contains
+RequestedEquipmentLine "0..*" -- "1" EquipmentType : requests
+EquipmentType "1" -- "0..*" EquipmentUnit : categorises
+EquipmentUnit "1" -- "0..*" EquipmentComponent : consists of
+LoanRequest "1" -- "0..1" CollectionRecord : is fulfilled by
+StaffMember "1" -- "0..*" CollectionRecord : records
+CollectionRecord "0..*" -- "1..*" EquipmentUnit : records issue of
+CollectionRecord "1" -- "0..1" ReturnInspectionRecord : is followed by
+StaffMember "1" -- "0..*" ReturnInspectionRecord : records
+ReturnInspectionRecord "0..*" -- "1..*" EquipmentUnit : inspects
+ReturnInspectionRecord "1" -- "0..*" DamageRecord : identifies
+DamageRecord "0..*" -- "1" EquipmentUnit : affects
 @enduml
