@@ -1,0 +1,68 @@
+@startuml
+skinparam classAttributeIconSize 0
+hide methods
+
+class Borrower {
+  name
+  borrowerCategory
+  contactDetails
+}
+
+class StaffMember {
+  name
+  role
+}
+
+class LoanRequest {
+  receivedDate
+  collectionDate
+  returnDate
+  status
+  activityDescription
+  namedCollector
+}
+
+class RequestedEquipmentLine {
+  requestedQuantity
+}
+
+class EquipmentType {
+  name
+  requiresSafetyInspection
+  requiresHandlingInstructions
+  requiresCoordinatorApproval
+}
+
+class EquipmentUnit {
+  condition
+  availabilityStatus
+  fundingSource
+  safetyInspectionExpiryDate
+}
+
+class EquipmentComponent {
+  name
+  condition
+  componentStatus
+}
+
+class CollectionRecord {
+  collectionDate
+  actualCollectorName
+}
+
+class ReturnInspectionRecord {
+  returnDate
+  cleanlinessResult
+  safetyResult
+  maintenanceNeed
+}
+
+class DamageRecord {
+  identifiedDate
+  issueDescription
+  usableAfterDamage
+  repairRequired
+}
+
+@enduml
